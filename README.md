@@ -9,3 +9,8 @@ To build and run:
 4. Because of using RAW sockets, Pelles C should be run with Administrator rights.
 
 Target IP is passed through command line arguments. To add them, go to project -> project options -> general
+
+# How to use
+Supported flags for setting: timeout, sent packet count, maximum hops, and resolve/do not resolve IPs to domain names mode. To see full help launch the program without arguments.
+
+Launch the program passing flags (not necessary) and destination node (IP or domain name, necessary) as command-line arguments.
