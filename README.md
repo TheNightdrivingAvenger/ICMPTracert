@@ -2,8 +2,10 @@
 
 ## About
 This is an implementation of Windows's tracert program that uses (just like the original) ICMP packets, written in raw C + WinAPI (and a bit of C standard library for easier output).
-This program uses non-unicode WinAPI functions, so **using unicode domain names won't work** (also problems can show up if your PC has unicode characters in its name or if the name is longer than 50 characters).
+This program uses non-unicode WinAPI functions, so **using unicode domain names won't work**.
 Only *IPv4* is supported (both your PC and target node must support IPv4).
+
+**_YOUR FIREWALL MAY (AND MOST LIKELY WILL) SUSPEND INCOMING ICMP "TTL expired" PACKAGES_**, so if the program doesn't work, you cant try to set up your firewall properly, add the program to exceptions, or simply turn it off while using the program.
 
 ## How to build
 *Developed with Pelles C for Windows v9.00.*
