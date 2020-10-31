@@ -5,7 +5,7 @@ This is an implementation of Windows's tracert program that uses (just like the 
 This program uses non-unicode WinAPI functions, so **using unicode domain names won't work**.
 Only *IPv4* is supported (both your PC and target node must support IPv4).
 
-**_YOUR FIREWALL MAY (AND MOST LIKELY WILL) SUSPEND INCOMING ICMP "TTL expired" PACKAGES_**, so if the program doesn't work, you cant try to set up your firewall properly, add the program to exceptions, or simply turn it off while using the program.
+**_YOUR FIREWALL MAY (AND MOST LIKELY WILL) SUSPEND INCOMING ICMP "TTL expired" PACKAGES_**, so if the program doesn't work, you can try to set up your firewall properly, add the program to exceptions, or simply turn it off while using the program.
 
 ## How to build
 *Developed with Pelles C for Windows v9.00.*
@@ -21,6 +21,6 @@ Target IP/domain name is passed through command line arguments (as well as some 
 5. Any other compiler and builder should be fine too, just make sure it supports Microsoft SDK.
 
 ## How to use
-Supported flags for setting: timeout, sent packet count, maximum hops, and resolve/do not resolve IPs to domain names mode. To see full help launch the program without arguments.
+Supported flags for setting: timeout, sent packet count, maximum hops, and resolve/do not resolve IPs to domain names mode. To see the full help launch the program without arguments.
 
 Launch the program passing flags (not necessary) and destination node (IP or domain name, necessary) as command-line arguments.
